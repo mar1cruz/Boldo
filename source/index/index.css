@@ -2,6 +2,10 @@
 		padding: 0;
 		margin: 0;
 }
+* div {
+		margin: 0;
+		padding: 0;
+}
 
 .container {
 		max-width: 1200px;
@@ -83,4 +87,126 @@
 		    -ms-flex-align: center;
 		        align-items: center;
 		color: #0A2640;
+}
+.template-container .boldo-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		padding-bottom: 56px;
+}
+.template-container .boldo-row-building {
+		max-width: 47%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+}
+.template-container .boldo-row-building__title {
+		font-family: "Manrope", "Helvetica Neue", sans-serif;
+		font-size: 48px;
+		line-height: 72px;
+		color: #FFFFFF;
+		padding-bottom: 16px;
+}
+.template-container .boldo-row-building__text {
+		font-family: "Open Sans", "Helvetica Neue", sans-serif;
+		font-size: 16px;
+		line-height: 28px;
+		color: #F1F1F1;
+		padding-bottom: 40px;
+}
+.template-container .boldo-row-building__buttons {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+}
+.template-container .boldo-row-building__buttons a {
+		text-decoration: none;
+}
+.template-container .boldo-row-building__buttons .button-template {
+		font-family: "Manrope", "Helvetica Neue", sans-serif;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		width: 247px;
+		height: 60px;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 28px;
+		color: #0A2640;
+		background: #65E4A3;
+		border: 2px solid #69E6A6;
+		border-radius: 56px;
+}
+.template-container .boldo-row-building__buttons .button-template a:visited {
+		color: #0A2640;
+}
+.template-container .boldo-row-building__buttons .button-explore {
+		font-family: "Open Sans", "Helvetica Neue", sans-serif;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin-left: 24px;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 28px;
+		color: #FFFFFF;
+		width: 187px;
+		height: 60px;
+		border: 2px solid #FFFFFF;
+		border-radius: 56px;
+}
+.template-container .boldo-row-building__buttons .button-explore a:visited {
+		color: #FFFFFF;
+}
+.template-container .boldo-row-grafics {
+		max-width: 42%;
+}
+.template-container .boldo-row-grafics .boldo__first-grafic {
+		width: 100%;
+		padding-bottom: 26px;
+}
+.template-container .boldo-row-grafics .grafics-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+}
+.template-container .boldo-row-grafics .grafics-row .boldo__second-grafic {
+		max-width: 38%;
+}
+.template-container .boldo-row-grafics .grafics-row .boldo__third-grafic {
+		max-width: 52%;
+		margin-left: 40px;
+}
+.template-container .boldo-image {
+		max-width: 1173px;
+		margin: 0 auto;
+		padding-bottom: 64px;
+}
+.template-container .boldo-image img {
+		display: block;
 }

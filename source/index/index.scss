@@ -1,6 +1,10 @@
 *{
     padding: 0;
     margin: 0;
+    div{
+        margin:0;
+        padding: 0;
+    }
 }
 
 //---  mixins  ---//
@@ -38,11 +42,6 @@ $main-color:#0A2640;
                 .header-logo{
                     display: flex;
                     align-items: center;
-                    &__image{
-                        
-                        &-top{}
-                        &-bottom{}
-                    }
                     &__text{
                         @include font-secondary;
 
@@ -89,12 +88,112 @@ $main-color:#0A2640;
                                 align-items: center;  
                                 color: $main-color;
                             }
+                    }
+                }
+            }
+        .boldo{
+            &-row{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom:56px ;
+                &-building{
+                    max-width: 47%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    &__title{
+                        @include font-secondary;
+                        font-size: 48px;
+                        line-height: 72px;
+                        color: #FFFFFF;
+                        padding-bottom: 16px;
+                    }
+                    &__text{
+                        @include font-main;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #F1F1F1;
+                        padding-bottom: 40px;
+                    }
+                    &__buttons{
+                        display: flex;
+                        a{
+                            text-decoration: none;
+                        }
+                        .button-template{
+                            @include font-secondary;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             
+                            width: 247px;
+                            height: 60px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 28px;
+                            color: $main-color;
+                            background: #65E4A3;
+                            border: 2px solid #69E6A6;
+                            border-radius: 56px;
+                            a:visited{
+                                color: $main-color;
+                            }
+                        }
+                        .button-explore{
+                            @include font-main;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            margin-left: 24px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 28px;
+                            color: #FFFFFF;
+                            width: 187px;
+                            height: 60px;
+                            border: 2px solid #FFFFFF;
+                            border-radius: 56px;
+                            a{
+
+                            }
+                            a:visited{
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+                &-grafics{
+                    max-width: 42%;
+                    .boldo__first-grafic{
+                        width: 100%;
+                        padding-bottom: 26px;
+                    }
+                    .grafics-row{
+                        display: flex;
+                        justify-content: space-between;
+                        .boldo__second-grafic{
+                            max-width: 38%;
+                        }
+                        .boldo__third-grafic{
+                            max-width: 52%;
+                            margin-left: 40px;
+                        }
                     }
                     
                 }
             }
+            &-image{
+                max-width: 1173px;
+                margin: 0 auto;
+                padding-bottom: 64px;
+                img{
+                    display: block;
+                }
+            }
+        }
     }
 }
-
 //---  /template  ---//
