@@ -1,0 +1,86 @@
+* {
+		padding: 0;
+		margin: 0;
+}
+
+.container {
+		max-width: 1200px;
+		margin: 0 auto;
+}
+
+.template {
+		background-color: #0A2640;
+}
+.template-container .header {
+		height: 42px;
+		padding-top: 56px;
+		padding-bottom: 64px;
+}
+.template-container .header-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+}
+.template-container .header-row .header-logo {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+.template-container .header-row .header-logo__text {
+		font-family: "Manrope", "Helvetica Neue", sans-serif;
+		padding-left: 12px;
+		font-weight: 700;
+		font-size: 43.25px;
+		line-height: 34px;
+		color: #FFFFFF;
+}
+.template-container .header-row .header-navigation ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+.template-container .header-row .header-navigation ul a {
+		font-family: "Open Sans", "Helvetica Neue", sans-serif;
+		display: block;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 28px;
+		color: #FFFFFF;
+		text-decoration: none;
+}
+.template-container .header-row .header-navigation ul a:visited {
+		color: #FFFFFF;
+}
+.template-container .header-row .header-navigation ul li {
+		list-style: none;
+}
+.template-container .header-row .header-navigation ul li + li {
+		padding-left: 40px;
+}
+.template-container .header-row .header-navigation .log-in {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 128px;
+		height: 40px;
+		background: #FFFFFF;
+		border: 2px solid #FFFFFF;
+		border-radius: 24px;
+		padding: 0;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		color: #0A2640;
+}
