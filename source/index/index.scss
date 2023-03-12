@@ -30,12 +30,32 @@ $main-color:#0A2640;
 //---  template  ---//
 .template{
     background-color: $main-color;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     &-container{
+
+        .template-circle{
+            position: absolute;
+            width: 1294px;
+            height: 1294px;
+            border-radius: 100%;
+            background-color: #1C3D5B;
+            right: -600px;
+            top: -760px;
+            z-index: 2;
+            opacity: 0.6;
+
+            
+        }
         .header{
+            position: relative;
+            z-index: 3;
             height: 42px;
             padding-top: 56px;
             padding-bottom: 64px;
             &-row{
+                
                 display: flex;
                 justify-content: space-between;
                 
@@ -93,19 +113,23 @@ $main-color:#0A2640;
             }
         .boldo{
             &-row{
+                position: relative;
+                z-index: 4;
                 display: flex;
                 justify-content: space-between;
                 padding-bottom:56px ;
                 &-building{
-                    max-width: 47%;
+                    max-width: 48%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     &__title{
-                        @include font-secondary;
-                        font-size: 48px;
-                        line-height: 72px;
-                        color: #FFFFFF;
+                        h1{
+                            @include font-secondary;
+                            font-size: 48px;
+                            line-height: 72px;
+                            color: #FFFFFF;
+                        }
                         padding-bottom: 16px;
                     }
                     &__text{
@@ -166,6 +190,7 @@ $main-color:#0A2640;
                     }
                 }
                 &-grafics{
+
                     max-width: 42%;
                     .boldo__first-grafic{
                         width: 100%;
@@ -186,6 +211,7 @@ $main-color:#0A2640;
                 }
             }
             &-image{
+
                 max-width: 1173px;
                 margin: 0 auto;
                 padding-bottom: 64px;
@@ -197,3 +223,178 @@ $main-color:#0A2640;
     }
 }
 //---  /template  ---//
+
+//---  service  ---//
+.service{
+    padding-top: 82px;
+    &-container{
+        &-title{
+            margin: 0 auto;
+            padding-bottom: 80px;
+            text-align: center;
+            max-width: 842px;
+            &__service{
+                @include font-main;
+                font-size: 20px;
+                line-height: 32px;
+                color: #777777;
+                padding-bottom: 12px;
+            }
+            &__text{
+                h2{
+                    @include font-secondary;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 48px;
+                    line-height: 72px;
+                    color: #000000;
+                }
+
+            }
+        }
+        &-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 185px;
+            &__item{
+                max-width: 300px;
+                &-image{
+                    padding-bottom: 24px;
+                }
+                &-title{
+                    @include font-main;
+                    
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #000000;
+                    padding-bottom: 12px;
+                }
+                &-subtitle{
+                    @include font-main;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #777777;
+                    padding-bottom: 28px;
+                }
+                &-link{
+                    @include font-main;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 36px;
+                    display: inline-block;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid $main-color;
+                    .expole-page{
+                        span{
+                            padding-left: 12px;
+                            img{
+                                display: block;
+                            }
+                        }
+                        display: flex;
+                        align-items: center;
+                    }
+                    a{
+                        color: $main-color;
+                        text-decoration: none;
+                        a:visited{
+                         color:$main-color;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+//---  /service  ---//
+
+//---  connect  ---//
+.connect{
+    &-container{
+        &-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 224px;
+            &-images{
+                position: relative;
+                .connect-second-image{
+                    position: absolute;
+                    right: 25px;
+                    top:190px;
+                    img{
+                        max-width: 251px;
+                        display: block;
+                    }
+                }
+                max-width: 494px;
+            }
+            &-element{
+                max-width: 494px;
+                &__title{
+                    h2{
+                        @include font-main;
+                        font-size: 36px;
+                        font-weight: 400;
+                        line-height: 56px;
+                        color: #000000;
+                    }
+                    padding-bottom: 40px;
+                }
+                &__points{
+                    @include font-main;
+
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #000000;
+                    ul{
+                        li+li{
+                            padding-top: 24px;
+                        }
+                        li:last-of-type{
+                            padding-bottom: 56px;
+                        }
+                        li{
+                            display: flex;
+                            align-items: center;
+                            list-style: none;
+                        }
+                        li::before{
+                            content: url('/img/index/Group\ 210.png');
+                            height: 36px;
+                            padding-right: 27px;
+                        }
+                    }
+                    
+                }
+                &__button{
+                    width: 210px;
+                    height: 60px;
+                    background: $main-color;
+                    border: 2px solid $main-color;
+                    border-radius: 56px;
+                    a{
+                        @include font-main;
+
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: #FFFFFF;
+                        &:visited{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//---  /connect  ---//
