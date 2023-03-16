@@ -253,6 +253,17 @@
 .box-container .boldo-image img {
 		width: 100%;
 }
+@media (max-width: 991px) {
+		.box-container .boldo .boldo-row {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+		}
+		.box-container .boldo .boldo-row-building, .box-container .boldo .boldo-row-grafics {
+				width: 100%;
+		}
+}
 
 .service-container-title {
 		padding-top: 82px;
@@ -715,6 +726,26 @@
 				padding: 20px;
 		}
 }
+@media (max-width: 991px) {
+		.ramp-container .ramp-container-title h2 {
+				font-size: 30px;
+				line-height: 50px;
+				color: #FFFFFF;
+		}
+		.ramp-container-row {
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+		}
+		.ramp-container-row .ramp-container-item {
+				width: 80%;
+				margin-bottom: 20px;
+		}
+}
 
 .customers-container {
 		margin-bottom: 160px;
@@ -765,6 +796,23 @@
 .customers-container .customers-row__list li::after {
 		content: url("/img/index/Group 215.png");
 		max-height: 28px;
+}
+@media (max-width: 991px) {
+		.customers .customers-row {
+				margin: 0 auto;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				width: 90%;
+		}
+		.customers .customers-row__title {
+				max-width: 100%;
+				padding-bottom: 30px;
+		}
+		.customers .customers-row__list {
+				width: 100%;
+		}
 }
 
 .news-container .news-title, .news-container .news-subtitle {
@@ -875,15 +923,15 @@
 				        align-items: center;
 				padding-bottom: 70px;
 		}
-		.news-container .news-article-row__item {
+		.news-container .news-article-row-item {
 				margin: 0 auto;
-				max-width: 700px;
+				padding-bottom: 50px;
 		}
-		.news-container .news-article-row__item-image img {
+		.news-container .news-article-row-item-image img {
 				width: 100%;
 		}
 }
-@media (min-width: 1200px) {
+@media (min-width: 1199px) {
 		.news-container-row {
 				padding-bottom: 185px;
 		}

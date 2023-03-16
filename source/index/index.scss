@@ -240,6 +240,7 @@ padding-right: 20px;
                     
                 }
             }
+            
             &-image{
 
                 max-width: 1173px;
@@ -247,6 +248,15 @@ padding-right: 20px;
                 padding-bottom: 64px;
                 img{
                     width: 100%;
+                }
+            }
+
+            @media (max-width:$screen-md-max){
+                .boldo-row{
+                    flex-direction: column;
+                    &-building,&-grafics{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -701,7 +711,25 @@ padding-right: 20px;
                     padding: 20px;
                 }
             }
-        }  
+        } 
+        @media (max-width:$screen-md-max){
+            .ramp-container-title{
+                h2{
+                    font-size: 30px;
+                    line-height: 50px;
+                    color: #FFFFFF;
+                }
+            }
+            &-row{
+                align-items: center;
+                flex-direction: column;
+                .ramp-container-item{
+                    width: 80%;
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
     }
 }
 
@@ -752,7 +780,23 @@ padding-right: 20px;
             }
         }
     }
+    @media (max-width:$screen-md-max){
+        .customers-row{
+            margin: 0 auto;
+            flex-direction: column;
+            width: 90%;
+            &__title{
+                max-width: 100%;
+                padding-bottom: 30px;
+            }
+            &__list{
+                width: 100%;
+            }
+        }
+    }
+
 }
+
 //---  /customers  ---//
 
 //--- news  ---//
@@ -847,25 +891,24 @@ padding-right: 20px;
         @media (max-width:$screen-md-max){
             .news-article{
                 &-row{
+                    
                     flex-direction: column;
                     align-items: center;
-                    &__item{
-                        margin: 0 auto;
-                        max-width: 700px;
-
+                    &-item{
+                        margin: 0 auto;                        
+                        padding-bottom: 50px;
                         &-image{
                             img{
                                 width: 100%;
                             }
                         }
-        
                     }
                     padding-bottom: 70px;
                 }
             }
             
         }
-        @media (min-width:$screen-xl){
+        @media (min-width:$screen-lg-max){
             &-row{
                 padding-bottom: 185px;
             }
