@@ -1,1 +1,1 @@
-boldo-three.vercel.app
+https://boldo-three.vercel.app/
