@@ -157,12 +157,11 @@ $main-color:#0A2640;
             display: flex;
             flex-basis: 550px;
             justify-content: space-between;
-            &--image{
-
-            }
+            align-items: center;
             &--push{
                 flex-basis: 550px;
                 text-align: left;
+
                 .blog-thoughts--push__category-and-date,
                 .blog-thoughts--push__autor{
                     @include font-main;
