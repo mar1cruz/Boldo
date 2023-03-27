@@ -1,0 +1,124 @@
+//---  ramp  ---//
+.ramp {
+    background-color: $main-color;
+    &-container {
+        padding: 96px 0;
+        margin-bottom: 121px;
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 72px;
+            .ramp-container-title {
+                max-width: 720px;
+                h2 {
+                    @include font-secondary;
+                    font-size: 48px;
+                    line-height: 72px;
+                    color: #ffffff;
+                }
+            }
+            .ramp-container-buttons {
+                display: flex;
+
+                .ramp__first-button {
+                    margin-right: 28px;
+                    cursor: pointer;
+                }
+                .ramp__second-button {
+                    cursor: pointer;
+                }
+            }
+        }
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .ramp-container-item {
+                background: #ffffff;
+                box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+                border-radius: 12px;
+                max-width: 350px;
+                padding: 40px;
+                display: inline-block;
+                &__topic {
+                    @include font-main;
+
+                    max-width: 270px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #000000;
+                    padding-bottom: 40px;
+                }
+                &-autor {
+                    max-height: 58px;
+                    display: flex;
+                    &__icon {
+                        padding-right: 16px;
+                    }
+                    &__name {
+                        @include font-main;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $main-color;
+                        padding-bottom: 8px;
+                    }
+                    &__email {
+                        @include font-main;
+                        a {
+                            text-decoration: none;
+                            font-size: 14px;
+                            color: $main-color;
+                            &:visited {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1100px) {
+        .ramp-container-wrapper {
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .ramp-container-row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .ramp-container-buttons {
+            display: none;
+        }
+        .ramp-container-item + .ramp-container-item {
+            margin-top: 10px;
+        }
+    }
+    @media (max-width: 760px) {
+        .ramp-container-wrapper .ramp-container-title h2 {
+            font-size: 30px;
+            line-height: 55px;
+        }
+    }
+    @media (max-width: 400px) {
+        .ramp-container-item__topic {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .ramp-container-item-autor__icon {
+            img {
+                width: 40px;
+            }
+        }
+        .ramp-container-row .ramp-container-item-autor__email a {
+            font-size: 14px;
+        }
+        .ramp-container-row .ramp-container-item-autor__name {
+            font-size: 15px;
+        }
+    }
+}
+
+//---  /ramp  ---//

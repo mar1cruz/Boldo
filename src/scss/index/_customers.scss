@@ -1,0 +1,62 @@
+//---  customers  ---//
+.customers {
+    &-container {
+        margin-bottom: 160px;
+        .customers-main-image {
+            img {
+                width: 100%;
+            }
+            padding-bottom: 56px;
+        }
+        .customers-row {
+            display: flex;
+            justify-content: space-between;
+            &__title {
+                max-width: 500px;
+
+                @include font-secondary;
+                font-size: 36px;
+                line-height: 56px;
+                color: #000000;
+            }
+            &__list {
+                width: 500px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @include font-main;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #000000;
+                    list-style: none;
+                    border-bottom: 1px solid #c4c4c4;
+                    padding-bottom: 16px;
+                    margin-bottom: 32px;
+                }
+                li::after {
+                    content: url("/img/index/Group\ 215.png");
+                    max-height: 28px;
+                }
+            }
+        }
+    }
+    @media (max-width: $screen-md-max) {
+        .customers-row {
+            margin: 0 auto;
+            flex-direction: column;
+            width: 90%;
+            &__title {
+                max-width: 100%;
+                padding-bottom: 30px;
+            }
+            &__list {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//---  /customers  ---//

@@ -1,0 +1,108 @@
+//---  footer  ---//
+.footer {
+    &-container {
+        &-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .footer-container-info {
+                width: 25%;
+                &__logo {
+                    padding-bottom: 40px;
+                    position: relative;
+                    &-image {
+                        .image-top {
+                            position: absolute;
+
+                            top: 0px;
+                        }
+                        .image-bottom {
+                            position: absolute;
+
+                            top: 15px;
+                        }
+                    }
+                    &-text {
+                        @include font-secondary;
+
+                        padding-left: 36px;
+                        font-weight: 700;
+                        font-size: 43.25px;
+                        line-height: 34px;
+                        color: #0a2640;
+                    }
+                }
+
+                &__social,
+                &__rights {
+                    @include font-main;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #777777;
+                    max-width: 300px;
+                }
+                &__social {
+                    padding-bottom: 64px;
+                }
+                &__rights {
+                }
+            }
+            .footer-container-nav {
+                display: flex;
+                justify-content: space-between;
+                width: 55%;
+                &__item {
+                    width: 165px;
+                    &-title {
+                        @include font-main;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #000000;
+                        padding-bottom: 58px;
+                    }
+                    &-nav {
+                        li {
+                            padding-bottom: 50px;
+                            list-style: none;
+                            .hiring {
+                                margin-left: 10px;
+                                display: inline-block;
+                                text-align: center;
+                                width: 72px;
+                                height: 30px;
+                                background: #65e4a3;
+                                border-radius: 120px;
+
+                                @include font-main;
+                                font-weight: 700;
+                                font-size: 13px;
+                                line-height: 30px;
+                                color: $main-color;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                &:visited {
+                                    color: #777777;
+                                }
+                            }
+                            @include font-main;
+                            font-size: 20px;
+                            line-height: 32px;
+                            color: #777777;
+                        }
+                        li:last-of-type {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    padding-bottom: 120px;
+}
+
+//---  /footer  ---//
