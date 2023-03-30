@@ -1,0 +1,115 @@
+//--- blog  ---//
+.blog {
+    text-align: center;
+    margin-bottom: 72px;
+    &-container {
+        .blog-thoughts {
+            font-weight: 400;
+            color: $main-color;
+            text-align: center;
+            font-style: normal;
+            &__title {
+                @include font-main;
+
+                font-size: 20px;
+                line-height: 32px;
+                padding-bottom: 12px;
+            }
+            &__text {
+                @include font-secondary;
+
+                font-size: 64px;
+                line-height: 84px;
+                padding-bottom: 68px;
+            }
+        }
+        .blog-thoughts-row {
+            display: flex;
+            flex-basis: 550px;
+            justify-content: space-between;
+            align-items: center;
+            &--push {
+                flex-basis: 550px;
+                text-align: left;
+
+                .blog-thoughts--push__category-and-date,
+                .blog-thoughts--push__autor {
+                    @include font-main;
+
+                    font-style: normal;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+
+                .blog-thoughts--push__category-and-date {
+                    padding-top: 70px;
+                    display: inline-block;
+                    padding-bottom: 12px;
+                }
+                .blog-thoughts--push__text {
+                    @include font-secondary;
+
+                    font-size: 48px;
+                    line-height: 72px;
+                    color: #000000;
+                    padding-bottom: 20px;
+                }
+                .blog-thoughts--push__autor {
+                    @include font-main;
+
+                    display: flex;
+                    color: #000000;
+                    align-items: center;
+                    .blog-thoughts--push__autor-image {
+                        img {
+                            display: block;
+                        }
+                        padding-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1170px) {
+        .blog-thoughts-row {
+            flex-direction: column;
+            max-width: 550px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .blog-thoughts-row--image {
+            img {
+                max-width: 550px;
+                width: 100%;
+            }
+            margin-bottom: 30px;
+        }
+        .blog-thoughts-row--push {
+            max-height: 200px;
+        }
+    }
+    @media (max-width: 867px) {
+        .blog-thoughts__text {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .blog-container .blog-thoughts-row--push .blog-thoughts--push__text {
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .blog-thoughts-row {
+            max-width: 450px;
+        }
+    }
+    @media (max-width: 520px) {
+        .blog-thoughts__text {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .blog-container .blog-thoughts-row--push .blog-thoughts--push__text {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+//--- /blog  ---//

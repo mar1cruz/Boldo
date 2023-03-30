@@ -1,0 +1,132 @@
+//---  header  ---//
+.header {
+    padding-top: 60px;
+}
+.section-header {
+    margin-bottom: 72.5px;
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        display: flex;
+        .image-top {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            background: $main-color;
+            border-radius: 0px 12.0139px 12.0139px 0px;
+        }
+        .image-bottom {
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            background: $main-color;
+            border-radius: 0px 12.0139px 12.0139px 0px;
+        }
+        &-text {
+            @include font-secondary;
+            padding-left: 37.17px;
+            color: $main-color;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 84px;
+        }
+    }
+    &__nav {
+        .header-links {
+            display: block;
+            cursor: pointer;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                @include font-main;
+                color: $main-color;
+                font-size: 16px;
+            }
+            li + li {
+                margin-left: 40px;
+            }
+            li:not(:last-child) {
+                font-weight: 600;
+                line-height: 28px;
+
+                display: flex;
+                align-items: center;
+            }
+
+            .header-links {
+                &:hover {
+                    color: rgb(123, 196, 49);
+                    transition: 0.3s ease;
+                }
+            }
+            li:not(:last-child) {
+                &:active {
+                    transform: translateY(3px);
+                    transition: 0.3s ease;
+                }
+            }
+
+            li:last-child {
+                border: 2px solid $main-color;
+                padding: 0;
+                text-align: center;
+                border-radius: 24px;
+                width: 128px;
+                font-weight: 700;
+                line-height: 24px;
+                margin-left: 40px;
+                display: block;
+                &:hover {
+                    transition: 0.3s ease;
+                    background-color: rgb(123, 196, 49);
+                    border-color: black;
+                    a {
+                        color: black;
+                    }
+                }
+                &:active {
+                    transform: translateY(3px);
+                }
+            }
+            a {
+                color: $main-color;
+                text-decoration: none;
+                &:visited {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        .section-header__nav ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                padding: 0px;
+                margin: 0px;
+            }
+            li + li {
+                margin-top: 10px;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .section-header__logo-text {
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .section-header__nav {
+            li {
+                &:last-child {
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+//---  /header  ---//
