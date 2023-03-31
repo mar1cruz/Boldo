@@ -96,10 +96,25 @@ html {
   border: 2px solid #ffffff;
   border-radius: 240px;
   text-indent: 32px;
+  transition: 0.5s ease;
+}
+.template-container-form .form__email input::-moz-placeholder {
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.template-container-form .form__email input::placeholder {
+  transition: 0.5s ease;
 }
 .template-container-form .form__email input:focus {
   box-shadow: 0px 0px 10px 2px #fff;
-  transition: 0.6s ease;
+}
+.template-container-form .form__email input:focus::-moz-placeholder {
+  padding-left: 100px;
+  opacity: 0;
+}
+.template-container-form .form__email input:focus::placeholder {
+  padding-left: 100px;
+  opacity: 0;
 }
 .template-container-form .form__button button {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
@@ -124,57 +139,64 @@ html {
   transform: translateY(3px);
   transition: 0.3s ease;
 }
-
 @media (max-width: 1185px) {
-  .template-media .form {
+  .template .form {
     flex-direction: column;
     align-items: center;
   }
-  .template-media .form__email input::-moz-placeholder {
+  .template .form__email input::-moz-placeholder {
     text-align: center;
     text-indent: 0px;
   }
-  .template-media .form__email input::placeholder {
+  .template .form__email input::placeholder {
     text-align: center;
     text-indent: 0px;
   }
-  .template-media .form__email {
+  .template .form__email {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 990px) {
-  .template-media .template-container-image img {
+  .template .template-container-image img {
     height: 200px;
     width: 600px;
   }
-  .template-media .template-container {
+  .template .template-container {
     overflow: hidden;
   }
 }
 @media (max-width: 700px) {
-  .template-media .template-container-image img {
+  .template .template-container-image img {
     height: 160px;
     width: 500px;
   }
 }
 @media (max-width: 500px) {
-  .template-media .template-container-image img {
+  .template .template-container-image img {
     height: 160px;
     width: 300px;
+    position: absolute;
+    right: 0px;
   }
 }
 @media (max-width: 756px) {
-  .template-media .template-container-title {
+  .template .template-container-title {
     font-size: 35px;
     line-height: 55px;
   }
 }
 @media (max-width: 480px) {
-  .template-media .template-container-title {
+  .template .template-container-form .form__email input::-moz-placeholder {
+    font-size: 17px;
+  }
+  .template .template-container-form .form__email input::placeholder {
+    font-size: 17px;
+  }
+  .template .template-container-title {
     font-size: 30px;
     line-height: 35px;
   }
-  .template-media .template-container-form .form__email input {
+  .template .template-container-form .form__email input {
     width: 210px;
   }
 }
