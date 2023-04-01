@@ -54,11 +54,14 @@
                 &__item {
                     width: 165px;
                     &-title {
-                        @include font-main;
-                        font-weight: 700;
-                        font-size: 20px;
-                        line-height: 32px;
-                        color: #000000;
+                        h4 {
+                            @include font-main;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 32px;
+                            color: #000000;
+                            font-weight: normal;
+                        }
                         padding-bottom: 58px;
                     }
                     &-nav {

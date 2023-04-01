@@ -61,17 +61,20 @@ html {
 .template-container-title {
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "Manrope", "Helvetica Neue", sans-serif;
   position: relative;
   z-index: 11;
-  color: #f1f1f1;
   margin: 0 auto;
-  text-align: center;
   padding-top: 72px;
   padding-bottom: 48px;
+  max-width: 716px;
+}
+.template-container-title h2 {
+  font-family: "Manrope", "Helvetica Neue", sans-serif;
+  color: #f1f1f1;
+  text-align: center;
   font-size: 48px;
   line-height: 72px;
-  max-width: 716px;
+  font-weight: normal;
 }
 .template-container-form {
   position: relative;

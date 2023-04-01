@@ -14,10 +14,14 @@
             color: #777777;
         }
         .news-subtitle {
-            @include font-secondary;
-            font-size: 48px;
-            line-height: 72px;
-            color: #000000;
+            h2 {
+                @include font-secondary;
+                font-size: 48px;
+                line-height: 72px;
+                color: #000000;
+                font-weight: normal;
+            }
+
             padding-bottom: 80px;
         }
         .news-article {
@@ -25,34 +29,38 @@
                 display: flex;
                 justify-content: space-between;
                 padding-bottom: 85px;
-                &-item {
-                    max-width: 300px;
+                .article-news {
                     display: flex;
-                    flex-direction: column;
-
-                    .news-article-row__category-and-date {
-                        padding-top: 24px;
-                        padding-bottom: 12px;
-                    }
-                    .news-article-row__text {
-                        flex: 1 0 auto;
-                        @include font-main;
-                        font-size: 20px;
-                        line-height: 32px;
-                        color: #000000;
-                        padding-bottom: 20px;
-                    }
-                    .news-article-row__autor {
+                    flex: 1 0;
+                    .news-article-row-item {
+                        max-width: 300px;
                         display: flex;
-                        align-items: center;
-                        flex: 0 1;
-                        &__autor-image {
-                            img {
-                                display: block;
-                            }
+                        flex-direction: column;
+
+                        .news-article-row__category-and-date {
+                            padding-top: 24px;
+                            padding-bottom: 12px;
                         }
-                        .news-article-row__autor-name {
-                            padding-left: 12px;
+                        .news-article-row__text {
+                            flex: 1 0 auto;
+                            @include font-main;
+                            font-size: 20px;
+                            line-height: 32px;
+                            color: #000000;
+                            padding-bottom: 20px;
+                        }
+                        .news-article-row__autor {
+                            display: flex;
+                            align-items: center;
+                            flex: 0 1;
+                            &__autor-image {
+                                img {
+                                    display: block;
+                                }
+                            }
+                            .news-article-row__autor-name {
+                                padding-left: 12px;
+                            }
                         }
                     }
                 }
@@ -106,7 +114,7 @@
             max-width: 400px;
             width: 100%;
         }
-        .news-article-row-item + .news-article-row-item {
+        .article-news + .article-news {
             margin-top: 50px;
         }
         .news-article-row__img {

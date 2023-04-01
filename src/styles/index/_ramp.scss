@@ -34,6 +34,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+
             .ramp-container-item {
                 background: #ffffff;
                 box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
@@ -92,7 +93,7 @@
         .ramp-container-buttons {
             display: none;
         }
-        .ramp-container-item + .ramp-container-item {
+        .ramp-item + .ramp-item {
             margin-top: 10px;
         }
     }
