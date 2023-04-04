@@ -63,6 +63,11 @@
                     border-bottom: 1px solid $main-color;
 
                     .expole-page {
+                        .arrow-right {
+                            margin-left: 12px;
+                            height: 26px;
+                            width: 24px;
+                        }
                         &:hover {
                             color: #4081b9;
                         }

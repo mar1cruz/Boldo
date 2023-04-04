@@ -35,6 +35,7 @@
                     &__text {
                         @include font-secondary;
 
+                        align-items: center;
                         padding-left: 12px;
                         font-weight: 700;
                         font-size: 43.25px;
@@ -205,6 +206,10 @@
                 }
             }
         }
+    }
+    .logotypes {
+        height: 34px;
+        width: 26px;
     }
     @media (max-width: 1233px) {
         .boldo-row-building__title {

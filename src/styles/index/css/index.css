@@ -421,6 +421,7 @@ html {
 }
 .box-container .header-row .header-logo__text {
   font-family: "Manrope", "Helvetica Neue", sans-serif;
+  align-items: center;
   padding-left: 12px;
   font-weight: 700;
   font-size: 43.25px;
@@ -574,6 +575,10 @@ html {
 }
 .box-container .boldo-image img {
   width: 100%;
+}
+.box .logotypes {
+  height: 34px;
+  width: 26px;
 }
 @media (max-width: 1233px) {
   .box .boldo-row-building__title h1 {
@@ -731,7 +736,7 @@ html {
 }
 .connect-container-row-element__points ul li::before {
   content: "";
-  background: url("/src/img/index/Group 210.png");
+  background: url("/src/img/index/galochka.svg");
   background-repeat: no-repeat;
   height: 36px;
   padding-right: 63px;
@@ -889,7 +894,7 @@ html {
   margin-bottom: 32px;
 }
 .customers-container .customers-row__list li::after {
-  content: url("/src/img/index/Group 215.png");
+  content: url("/src/img/index/Group215.png");
   max-height: 28px;
   margin-left: 10px;
   cursor: pointer;
@@ -1368,6 +1373,11 @@ html {
 .service-container-row__item-link .expole-page {
   display: flex;
   align-items: center;
+}
+.service-container-row__item-link .expole-page .arrow-right {
+  margin-left: 12px;
+  height: 26px;
+  width: 24px;
 }
 .service-container-row__item-link .expole-page:hover {
   color: #4081b9;
