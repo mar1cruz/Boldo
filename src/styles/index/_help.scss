@@ -77,17 +77,17 @@
                         li:first-child {
                             background-color: $main-color;
                             &::before {
-                                content: url("/src/img/index/feather.png");
+                                content: url("/src/img/index/star.svg");
                             }
                         }
                         li:nth-child(2) {
                             &::before {
-                                content: url("/src/img/index/eye.png");
+                                content: url("/src/img/index/eye.svg");
                             }
                         }
                         li:last-child {
                             &::before {
-                                content: url("/src/img/index/sun.png");
+                                content: url("/src/img/index/sun.svg");
                             }
                         }
                     }
