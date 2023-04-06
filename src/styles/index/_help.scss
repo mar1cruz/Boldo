@@ -1,146 +1,143 @@
 //---  help  ---//
-.help {
-    &-container {
-        &-row {
+.help-container-row {
+    display: flex;
+    margin-bottom: 226px;
+    justify-content: space-between;
+}
+.help-container-row-images {
+    justify-content: flex-end;
+    max-width: 444px;
+    order: 2;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+.help-first__image {
+}
+.help-second-image {
+    position: absolute;
+    bottom: -150px;
+    left: 16px;
+}
+.help-container-row-element {
+    max-width: 500px;
+    order: 1;
+    padding-top: 107px;
+}
+.help-container-row-element__title {
+    h2 {
+        @include font-secondary;
+        font-size: 36px;
+        line-height: 56px;
+        color: #000000;
+        font-weight: normal;
+    }
+    padding-bottom: 64px;
+}
+.help-container-row-element__points {
+    ul {
+        li {
             display: flex;
-            margin-bottom: 226px;
-            justify-content: space-between;
-
-            &-images {
-                justify-content: flex-end;
-                max-width: 444px;
-                order: 2;
-                position: relative;
-                margin: 0 auto;
-                padding: 0;
-                .help-second-image {
-                    position: absolute;
-                    bottom: -150px;
-                    left: 16px;
-                }
-            }
-            &-element {
-                max-width: 500px;
-                order: 1;
-                padding-top: 107px;
-                &__title {
-                    h2 {
-                        @include font-secondary;
-                        font-size: 36px;
-                        line-height: 56px;
-                        color: #000000;
-                        font-weight: normal;
-                    }
-                    padding-bottom: 64px;
-                }
-                &__points {
-                    ul {
-                        li {
-                            display: flex;
-                            list-style: none;
-                            max-width: 100%;
-                            height: 68px;
-                            background: #ffffff;
-                            box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
-                            border-radius: 4px;
-
-                            @include font-main;
-                            font-weight: 600;
-                            font-size: 16px;
-                            line-height: 28px;
-                            color: #000000;
-                        }
-                        .active {
-                            @include font-main;
-                            font-weight: 600;
-                            font-size: 16px;
-                            line-height: 28px;
-                            color: #ffffff;
-                        }
-                        li + li {
-                            margin-top: 24px;
-                        }
-                        li:last-child {
-                            margin-bottom: 0;
-                        }
-                        li:first-child,
-                        li:nth-child(2),
-                        li:last-child {
-                            align-items: center;
-                            &::before {
-                                width: 28px;
-                                height: 28px;
-                                padding-right: 12px;
-                                padding-left: 20px;
-                            }
-                        }
-                        li:first-child {
-                            background-color: $main-color;
-                            &::before {
-                                content: url("/src/img/index/star.svg");
-                            }
-                        }
-                        li:nth-child(2) {
-                            &::before {
-                                content: url("/src/img/index/eye.svg");
-                            }
-                        }
-                        li:last-child {
-                            &::before {
-                                content: url("/src/img/index/sun.svg");
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    @media (max-width: 1070px) {
-        .help-container-row-element {
-            padding: 0;
-            margin: 0 auto;
-            max-width: 80%;
-        }
-        .help-container-row {
-            flex-direction: column;
-            margin-bottom: 120px;
-            .help-container-row-images {
-                order: 1;
-                .help-first__image {
-                    padding: 5px;
-                    max-width: 99%;
-                }
-                .help-second-image {
-                    max-width: 70%;
-                    bottom: -100px;
-                }
-                margin-bottom: 100px;
-            }
-        }
-    }
-    @media (max-width: 700px) {
-        .help-container-row-element__title h2 {
-            font-size: 26px;
-            line-height: 46px;
-        }
-        .help-container-row-element {
+            list-style: none;
             max-width: 100%;
+            height: 68px;
+            background: #ffffff;
+            box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+
+            @include font-main;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: #000000;
+        }
+        .active {
+            @include font-main;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: #ffffff;
+        }
+        li + li {
+            margin-top: 24px;
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+        li:first-child,
+        li:nth-child(2),
+        li:last-child {
+            align-items: center;
+            &::before {
+                width: 28px;
+                height: 28px;
+                padding-right: 12px;
+                padding-left: 20px;
+            }
+        }
+        li:first-child {
+            background-color: $main-color;
+            &::before {
+                content: url("/src/img/index/star.svg");
+            }
+        }
+        li:nth-child(2) {
+            &::before {
+                content: url("/src/img/index/eye.svg");
+            }
+        }
+        li:last-child {
+            &::before {
+                content: url("/src/img/index/sun.svg");
+            }
         }
     }
-    @media (max-width: 530px) {
+}
+@media (max-width: 1070px) {
+    .help-container-row-element {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    .help-container-row {
+        flex-direction: column;
+        margin-bottom: 120px;
         .help-container-row-images {
+            order: 1;
+            .help-first__image {
+                padding: 5px;
+                max-width: 99%;
+            }
+            .help-second-image {
+                max-width: 70%;
+                bottom: -100px;
+            }
             margin-bottom: 100px;
         }
-        .help-container-row-element__title {
-            padding-bottom: 30px;
-        }
-        .help-container-row-element__title h2 {
-            font-size: 16px;
-            line-height: 25px;
-        }
-        .help-container-row-element__points ul li {
-            font-size: 14px;
-        }
+    }
+}
+@media (max-width: 700px) {
+    .help-container-row-element__title h2 {
+        font-size: 26px;
+        line-height: 46px;
+    }
+    .help-container-row-element {
+        max-width: 100%;
+    }
+}
+@media (max-width: 530px) {
+    .help-container-row-images {
+        margin-bottom: 100px;
+    }
+    .help-container-row-element__title {
+        padding-bottom: 30px;
+    }
+    .help-container-row-element__title h2 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .help-container-row-element__points ul li {
+        font-size: 14px;
     }
 }
 //---  /help  ---//

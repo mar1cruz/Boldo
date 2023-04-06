@@ -1,207 +1,183 @@
-//---  footer  ---//
 .footer {
-    &-container {
-        &-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            .footer-container-info {
-                width: 25%;
-                &__logo {
-                    padding-bottom: 40px;
-                    position: relative;
-                    &-image {
-                        .image-top {
-                            position: absolute;
-
-                            top: 0px;
-                        }
-                        .image-bottom {
-                            position: absolute;
-
-                            top: 15px;
-                        }
-                    }
-                    &-text {
-                        @include font-secondary;
-
-                        padding-left: 36px;
-                        font-weight: 700;
-                        font-size: 43.25px;
-                        line-height: 34px;
-                        color: #0a2640;
-                    }
-                }
-
-                &__social,
-                &__rights {
-                    @include font-main;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 28px;
-                    color: #777777;
-                    max-width: 300px;
-                }
-                &__social {
-                    padding-bottom: 64px;
-                }
-            }
-            .footer-container-nav {
-                display: flex;
-                justify-content: space-between;
-                width: 55%;
-                &__item {
-                    width: 165px;
-                    &-title {
-                        h4 {
-                            @include font-main;
-                            font-weight: 700;
-                            font-size: 20px;
-                            line-height: 32px;
-                            color: #000000;
-                            font-weight: normal;
-                        }
-                        padding-bottom: 58px;
-                    }
-                    &-nav {
-                        li {
-                            padding-bottom: 50px;
-                            list-style: none;
-                            .hiring {
-                                margin-left: 10px;
-                                display: inline-block;
-                                text-align: center;
-                                width: 72px;
-                                height: 30px;
-                                background: #65e4a3;
-                                border-radius: 120px;
-
-                                @include font-main;
-                                font-weight: 700;
-                                font-size: 13px;
-                                line-height: 30px;
-                            }
-
-                            a {
-                                color: #777777;
-                                text-decoration: none;
-                                &:visited {
-                                    color: #777777;
-                                }
-                            }
-                            .links {
-                                &:hover {
-                                    color: #4b4848;
-                                    text-decoration: underline;
-                                    transition: 0.3s ease;
-                                }
-                                &:active {
-                                    color: #170247;
-                                    font-weight: bold;
-                                }
-                            }
-
-                            @include font-main;
-                            font-size: 20px;
-                            line-height: 32px;
-                            color: #777777;
-                        }
-                        li:last-of-type {
-                            padding-bottom: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
     padding-bottom: 120px;
-    @media (max-width: 1000px) {
-        .footer-container-row {
-            flex-direction: column;
-            align-items: center;
+}
+.footer-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-container-info {
+    width: 25%;
+}
+.footer-container-info__logo {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.footer-container-info__logo-image {
+    max-height: 100%;
+    margin-right: 11px;
+}
+.footer-container-info__logo-text {
+    @include font-secondary;
+
+    padding-left: 0px;
+    font-weight: 700;
+    font-size: 43.25px;
+    line-height: 34px;
+    color: #0a2640;
+}
+.footer-container-info__social,
+.footer-container-info__rights {
+    @include font-main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #777777;
+    max-width: 300px;
+}
+.footer-container-info__social {
+    padding-bottom: 64px;
+}
+.footer-container-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+.footer-container-nav__item {
+    width: 165px;
+}
+.footer-container-nav__item-title {
+    h4 {
+        @include font-main;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000;
+        font-weight: normal;
+    }
+    padding-bottom: 58px;
+}
+.footer-container-nav__item-nav {
+    li {
+        @include font-main;
+
+        padding-bottom: 50px;
+        list-style: none;
+        font-size: 20px;
+        line-height: 32px;
+        color: #777777;
+        .hiring {
+            margin-left: 10px;
+            display: inline-block;
+            text-align: center;
+            width: 72px;
+            height: 30px;
+            background: #65e4a3;
+            border-radius: 120px;
+
+            @include font-main;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 30px;
         }
-        .footer-container-info {
-            width: 80%;
-            .footer-container-info__logo {
-                margin: 0 auto;
+        a {
+            color: #777777;
+            text-decoration: none;
+            &:visited {
+                color: #777777;
             }
-            .footer-container-info__social {
-                padding-bottom: 30px;
-                max-width: 100%;
-                width: 100%;
-            }
-            .footer-container-info__rights {
-                padding-bottom: 30px;
-                max-width: 100%;
-                width: 100%;
-            }
-        }
-        .footer-container-nav {
-            width: 80%;
         }
     }
-    @media (max-width: 800px) {
-        .footer-container-row .footer-container-info__logo-image {
-            .image-top {
-                display: block;
-                height: 10px;
-                top: 6px;
-            }
-            .image-bottom {
-                display: block;
-                height: 14px;
-                top: 18px;
-            }
-        }
-        .footer-container-info {
-            width: 80%;
-            align-items: center;
-        }
+    li:last-of-type {
+        padding-bottom: 0;
+    }
+}
+.links {
+    &:hover {
+        color: #4b4848;
+        text-decoration: underline;
+        transition: 0.3s ease;
+    }
+    &:active {
+        color: #170247;
+        font-weight: bold;
+    }
+}
+
+//---  MEDIA  ---//
+
+@media (max-width: 1000px) {
+    .footer-container-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container-info {
+        width: 80%;
         .footer-container-info__logo {
-            height: 33px;
-            display: flex;
-            align-items: flex-end;
+            margin: 0 auto;
         }
-        .footer-container-info__logo-text {
-            font-size: 30px;
-            line-height: 25px;
+        .footer-container-info__social {
+            padding-bottom: 30px;
+            max-width: 100%;
+            width: 100%;
         }
-        .footer-container-nav {
+        .footer-container-info__rights {
+            padding-bottom: 30px;
             max-width: 100%;
             width: 100%;
         }
     }
-    @media (max-width: 550px) {
-        .footer-container-info {
-            text-align: center;
-        }
-        .footer-container-info__logo {
-            justify-content: center;
-        }
-        .footer-container-row .footer-container-nav__item-nav li {
-            padding-bottom: 30px;
-        }
-        .footer-container-nav {
-            flex-direction: column;
-            align-items: center;
-            .footer-container-nav__item {
-                .footer-container-nav__item-title {
-                    font-size: 30px;
-                    line-height: 32px;
-                    padding-bottom: 30px;
-                }
-                .links {
-                    text-align: center;
-                    font-size: 20px;
-                    line-height: 20px;
-                }
+    .footer-container-nav {
+        width: 80%;
+    }
+}
+@media (max-width: 800px) {
+    .footer-container-info {
+        width: 80%;
+        align-items: center;
+    }
+    .footer-container-info__logo {
+        height: 33px;
+        align-items: flex-end;
+    }
+    .footer-container-info__logo-text {
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .footer-container-nav {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .footer-container-info {
+        text-align: center;
+    }
+    .footer-container-info__logo {
+        justify-content: center;
+    }
+    .footer-container-row .footer-container-nav__item-nav li {
+        padding-bottom: 30px;
+    }
+    .footer-container-nav {
+        flex-direction: column;
+        align-items: center;
+        .footer-container-nav__item {
+            .footer-container-nav__item-title {
+                font-size: 30px;
+                line-height: 32px;
+                padding-bottom: 30px;
             }
-            .footer-container-nav__item + .footer-container-nav__item {
-                border-top: 2px solid grey;
+            .links {
+                text-align: center;
+                font-size: 20px;
+                line-height: 20px;
             }
+        }
+        .footer-container-nav__item + .footer-container-nav__item {
+            border-top: 2px solid grey;
         }
     }
 }
-
-//---  /footer  ---//

@@ -1,85 +1,85 @@
 //---  customers  ---//
-.customers {
-    &-container {
-        margin-bottom: 160px;
-        .customers-main-image {
-            img {
-                width: 100%;
-            }
-            padding-bottom: 56px;
-        }
-        .customers-row {
-            display: flex;
-            justify-content: space-between;
-            &__title {
-                max-width: 500px;
-                h2 {
-                    @include font-secondary;
-                    font-size: 36px;
-                    line-height: 56px;
-                    color: #000000;
-                    font-weight: normal;
-                }
-            }
-            &__list {
-                width: 500px;
+.customers-container {
+    margin-bottom: 160px;
+}
+.customers-main-image {
+    img {
+        width: 100%;
+    }
+    padding-bottom: 56px;
+}
+.customers-row {
+    display: flex;
+    justify-content: space-between;
+}
+.customers-row__title {
+    max-width: 500px;
+    h2 {
+        @include font-secondary;
+        font-size: 36px;
+        line-height: 56px;
+        color: #000000;
+        font-weight: normal;
+    }
+}
+.customers-row__list {
+    width: 500px;
 
-                li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-                    @include font-main;
-                    font-size: 20px;
-                    line-height: 32px;
-                    color: #000000;
-                    list-style: none;
-                    border-bottom: 1px solid #c4c4c4;
-                    padding-bottom: 16px;
-                    margin-bottom: 32px;
-                }
-                li::after {
-                    content: url("/src/img/index/point.svg");
-                    max-height: 28px;
-                    margin-left: 10px;
-                    cursor: pointer;
-                }
-            }
-        }
+        @include font-main;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000;
+        list-style: none;
+        border-bottom: 1px solid #c4c4c4;
+        padding-bottom: 16px;
+        margin-bottom: 32px;
     }
-    @media (max-width: 1000px) {
-        .customers-row {
-            flex-direction: column;
-            align-items: center;
-        }
-        .customers-row__title,
-        .customers-row__list {
-            max-width: 90%;
-            width: 100%;
-        }
-        .customers-row__title {
-            margin-bottom: 40px;
-        }
+    li::after {
+        content: url("/src/img/index/point.svg");
+        max-height: 28px;
+        margin-left: 10px;
+        cursor: pointer;
     }
-    @media (max-width: 640px) {
-        .customers-row__title,
-        .customers-row__list {
-            max-width: 100%;
-            width: 100%;
-        }
-        .customers-row__title {
-            font-size: 30px;
-            line-height: 38px;
-        }
+}
+@media (max-width: 1000px) {
+    .customers-row {
+        flex-direction: column;
+        align-items: center;
     }
-    @media (max-width: 500px) {
-        .customers-row__title {
+    .customers-row__title,
+    .customers-row__list {
+        max-width: 90%;
+        width: 100%;
+    }
+    .customers-row__title {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 640px) {
+    .customers-row__title,
+    .customers-row__list {
+        max-width: 100%;
+        width: 100%;
+    }
+    .customers-row__title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+@media (max-width: 500px) {
+    .customers-row__title {
+        h2 {
             font-size: 20px;
             line-height: 32px;
         }
-        .customers-container .customers-row__list li {
-            font-size: 15px;
-        }
+    }
+    .customers-container .customers-row__list li {
+        font-size: 15px;
     }
 }
 
