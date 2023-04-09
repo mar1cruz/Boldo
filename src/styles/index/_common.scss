@@ -10,11 +10,14 @@
 .category-and-date {
     @include font-main;
     .category {
-        padding-right: 12px;
-        font-weight: 700;
-        color: $main-color;
+        text-decoration: none;
+        span {
+            font-weight: 700;
+            color: $main-color;
+        }
     }
     .data {
+        margin-left: 12px;
         color: #777777;
     }
 }
@@ -23,7 +26,22 @@
     font-size: 16px;
     line-height: 28px;
 }
-
+.autor__name {
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+}
+.link-text {
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+}
+.svg-button {
+    width: 72px;
+    height: 72px;
+}
 //--- template  ---//
 .template-container {
     background: $main-color;

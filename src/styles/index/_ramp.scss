@@ -23,9 +23,12 @@
 }
 .ramp-container-buttons {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 172px;
+    width: 100%;
 }
 .ramp__first-button {
-    margin-right: 28px;
     cursor: pointer;
 }
 .ramp__second-button {

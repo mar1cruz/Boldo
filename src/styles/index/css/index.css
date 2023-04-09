@@ -25,11 +25,14 @@ html {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 .category-and-date .category {
-  padding-right: 12px;
+  text-decoration: none;
+}
+.category-and-date .category span {
   font-weight: 700;
   color: #0a2640;
 }
 .category-and-date .data {
+  margin-left: 12px;
   color: #777777;
 }
 
@@ -37,6 +40,25 @@ html {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 28px;
+}
+
+.autor__name {
+  text-decoration: none;
+}
+.autor__name:visited {
+  color: inherit;
+}
+
+.link-text {
+  text-decoration: none;
+}
+.link-text:visited {
+  color: inherit;
+}
+
+.svg-button {
+  width: 72px;
+  height: 72px;
 }
 
 .template-container {
@@ -1277,10 +1299,13 @@ html {
 
 .ramp-container-buttons {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 172px;
+  width: 100%;
 }
 
 .ramp__first-button {
-  margin-right: 28px;
   cursor: pointer;
 }
 
