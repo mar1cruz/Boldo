@@ -19,18 +19,11 @@
       <section class="section-header container">
         <div class="section-header__logo">
           <div class="section-header__logo-image">
-            <img
-              class="image-top"
-              src="/src/img/blog/Rectangle1266.png"
-              alt=""
-            />
-            <img
-              class="image-bottom"
-              src="/src/img/blog/Rectangle1265.png"
-              alt=""
-            />
+            <svg class="black-logotype">
+              <use xlink:href="#black-logotype"></use>
+            </svg>
           </div>
-          <div class="section-header__logo-text">Boldo</div>
+          <div class="section-header__logo-text"><p>Boldo</p></div>
         </div>
         <div class="section-header__nav">
           <ul>
@@ -52,26 +45,48 @@
       <section class="blog">
         <div class="blog-container container">
           <div class="blog-thoughts">
-            <div class="blog-thoughts__title">Blog</div>
-            <div class="blog-thoughts__text">Thoughts and words</div>
+            <div class="blog-thoughts__title"><h2>Blog</h2></div>
+            <div class="blog-thoughts__text"><p>Thoughts and words</p></div>
           </div>
           <div class="blog-thoughts-row">
             <div class="blog-thoughts-row--image">
-              <img src="/src/img/blog/green_house.png" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    /src/img/blog/big_picture@1x.png 1x,
+                    /src/img/blog/big_picture@2x.png 2x
+                  "
+                />
+                <img src="/src/img/blog/big_picture@1x.png" alt="" />
+              </picture>
             </div>
             <div class="blog-thoughts-row--push">
               <div class="category-and-date">
-                <span class="category">Category</span
-                ><span class="data">November 22, 2021</span>
+                <a class="category" href="">
+                  <span class="category">Category</span></a
+                >
+                <span class="data">November 22, 2021</span>
               </div>
               <div class="blog-thoughts--push__text">
-                Pitch termsheet backing validation focus release.
+                <p>Pitch termsheet backing validation focus release.</p>
               </div>
               <div class="blog-thoughts--push__autor">
                 <div class="blog-thoughts--push__autor-image">
-                  <img src="/src/img/blog/Ellipse10.png" alt="" />
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          /src/img/blog/autor_1@1x.png 1x,
+                          /src/img/blog/autor_1@2x.png 2x
+                        "
+                      />
+                      <img src="/src/img/blog/autor_1@1x.png" alt="" />
+                    </picture>
+                  </a>
                 </div>
-                <div class="autor-name">Chandler Bing</div>
+                <div class="autor-name">
+                  <a class="autor__name" href="#">Chandler Bing</a>
+                </div>
               </div>
             </div>
           </div>
@@ -80,142 +95,272 @@
 
       <section class="news">
         <div class="news-container container">
-          <div class="news-title">Latest news</div>
+          <div class="news-title"><h2>Latest news</h2></div>
           <div class="news-article">
             <div class="news-article-row">
               <div class="news-article-row-item">
                 <div class="news-article-row__img">
-                  <img src="/src/img/blog/pitch.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="
+                        /src/img/blog/green-man@1x.png 1x,
+                        /src/img/blog/green-man@2x.png 2x
+                      "
+                    />
+                    <img src="/src/img/blog/green-man@1x.png" alt="" />
+                  </picture>
                 </div>
                 <div
                   class="news-article-row__category-and-date category-and-date"
                 >
-                  <span class="category">Category</span
+                  <a class="category" href="#"
+                    ><span class="category">Category</span></a
                   ><span class="data">November 22, 2021</span>
                 </div>
                 <div class="news-article-row__text">
-                  Pitch termsheet backing validation focus release.
+                  <p>Pitch termsheet backing validation focus release.</p>
                 </div>
                 <div class="news-article-row__autor">
                   <div class="news-article-row__autor-image">
-                    <img src="/src/img/blog/Ellipse10.png" alt="" />
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="
+                            /src/img/blog/autor_1@1x.png 1x,
+                            /src/img/blog/autor_1@2x.png 2x
+                          "
+                        />
+                        <img
+                          src="/src/img/blog/autor_1@1x.png"
+                          alt=""
+                        /> </picture
+                    ></a>
                   </div>
                   <div class="news-article-row__autor-name autor-name">
-                    Chandler Bing
+                    <a class="autor__name" href="#">Chandler Bing</a>
                   </div>
                 </div>
               </div>
               <div class="news-article-row-item">
                 <div class="news-article-row__img">
-                  <img src="/src/img/blog/Ellipse11.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="
+                        /src/img/blog/girl@1x.png 1x,
+                        /src/img/blog/girl@2x.png 2x
+                      "
+                    />
+                    <img src="/src/img/blog/girl@1x.png" alt="" />
+                  </picture>
                 </div>
                 <div
                   class="news-article-row__category-and-date category-and-date"
                 >
-                  <span class="category">Category</span
+                  <a class="category" href="#"
+                    ><span class="category">Category</span></a
                   ><span class="data">November 22, 2021</span>
                 </div>
                 <div class="news-article-row__text">
-                  Seed round direct mailing non-disclosure agreement graphical
-                  user interface rockstar.
+                  <p>
+                    Seed round direct mailing non-disclosure agreement graphical
+                    user interface rockstar.
+                  </p>
                 </div>
                 <div class="news-article-row__autor">
                   <div class="news-article-row__autor-image">
-                    <img src="/src/img/blog/autor_2.png" alt="" />
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="
+                            /src/img/blog/autor_2@1x.png 1x,
+                            /src/img/blog/autor_2@2x.png 2x
+                          "
+                        />
+                        <img src="/src/img/blog/autor_2@1x.png" alt="" />
+                      </picture>
+                    </a>
                   </div>
                   <div class="news-article-row__autor-name autor-name">
-                    Rachel Green
+                    <a class="autor__name" href="#">Rachel Green</a>
                   </div>
                 </div>
               </div>
               <div class="news-article-row-item">
                 <div class="news-article-row__img">
-                  <img src="/src/img/blog/Ellipse12.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="
+                        /src/img/blog/blue-man@1x.png 1x,
+                        /src/img/blog/blue-man@1x.png 2x
+                      "
+                    />
+                    <img src="/src/img/blog/blue-man@1x.png" alt="" />
+                  </picture>
                 </div>
                 <div
                   class="news-article-row__category-and-date category-and-date"
                 >
-                  <span class="category">Category</span
+                  <a class="category" href="#"
+                    ><span class="category">Category</span></a
                   ><span class="data">November 22, 2021</span>
                 </div>
                 <div class="news-article-row__text">
-                  Beta prototype sales iPad gen-z marketing network effects
-                  value proposition
+                  <p>
+                    Beta prototype sales iPad gen-z marketing network effects
+                    value proposition
+                  </p>
                 </div>
                 <div class="news-article-row__autor">
                   <div class="news-article-row__autor-image">
-                    <img src="/src/img/blog/autor_3.png" alt="" />
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="
+                            /src/img/blog/autor_3@1x.png 1x,
+                            /src/img/blog/autor_3@2x.png 2x
+                          "
+                        />
+                        <img src="/src/img/blog/autor_3@1x.png" alt="" />
+                      </picture>
+                    </a>
                   </div>
                   <div class="news-article-row__autor-name autor-name">
-                    Monica Geller
+                    <a href="#" class="autor__name">Monica Geller</a>
                   </div>
                 </div>
               </div>
               <div class="news-article-row-item">
                 <div class="news-article-row__img">
-                  <img src="/src/img/blog/Ellipse13.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="
+                        /src/img/blog/man@1x.png 1x,
+                        /src/img/blog/man@2x.png 2x
+                      "
+                    />
+                    <img src="/src/img/blog/man@1x.png" alt="" />
+                  </picture>
                 </div>
                 <div
                   class="news-article-row__category-and-date category-and-date"
                 >
-                  <span class="category">Category</span
+                  <a class="category" href="#"
+                    ><span class="category">Category</span></a
                   ><span class="data">November 22, 2021</span>
                 </div>
                 <div class="news-article-row__text">
-                  Pitch termsheet backing validation focus release.
+                  <p>Pitch termsheet backing validation focus release.</p>
                 </div>
                 <div class="news-article-row__autor">
                   <div class="news-article-row__autor-image">
-                    <img src="/src/img/blog/Ellipse10.png" alt="" />
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="
+                            /src/img/blog/autor_1@1x.png 1x,
+                            /src/img/blog/autor_1@2x.png 2x
+                          "
+                        />
+                        <img
+                          src="/src/img/blog/autor_1@1x.png"
+                          alt=""
+                        /> </picture
+                    ></a>
                   </div>
                   <div class="news-article-row__autor-name autor-name">
-                    Chandler Bing
+                    <a href="#" class="autor__name">Chandler Bing</a>
                   </div>
                 </div>
               </div>
               <div class="news-article-row-item">
                 <div class="news-article-row__img">
-                  <img src="/src/img/blog/Ellipse14.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="
+                        /src/img/blog/room@1x.png 1x,
+                        /src/img/blog/room@2x.png 2x
+                      "
+                    />
+                    <img src="/src/img/blog/room@1x.png" alt="" />
+                  </picture>
                 </div>
                 <div
                   class="news-article-row__category-and-date category-and-date"
                 >
-                  <span class="category">Category</span
+                  <a class="category" href="#"
+                    ><span class="category">Category</span></a
                   ><span class="data">November 22, 2021</span>
                 </div>
                 <div class="news-article-row__text">
-                  Seed round direct mailing non-disclosure agreement graphical
-                  user interface rockstar.
+                  <p>
+                    Seed round direct mailing non-disclosure agreement graphical
+                    user interface rockstar.
+                  </p>
                 </div>
                 <div class="news-article-row__autor">
                   <div class="news-article-row__autor-image">
-                    <img src="/src/img/blog/autor_2.png" alt="" />
+                    <a href="#">
+                      <picture>
+                        <source
+                          srcset="
+                            /src/img/blog/autor_2@1x.png 1x,
+                            /src/img/blog/autor_2@2x.png 2x
+                          "
+                        />
+                        <img
+                          src="/src/img/blog/autor_2@1x.png"
+                          alt=""
+                        /> </picture
+                    ></a>
                   </div>
                   <div class="news-article-row__autor-name autor-name">
-                    Rachel Green
+                    <a href="#" class="autor__name">Rachel Green</a>
                   </div>
                 </div>
               </div>
               <div class="news-article-row-item">
                 <div class="news-article-row__img">
-                  <img src="/src/img/blog/Ellipse15.png" alt="" />
+                  <picture>
+                    <source
+                      srcset="
+                        /src/img/blog/friends@1x.png 1x,
+                        /src/img/blog/friends@2x.png 2x
+                      "
+                    />
+                    <img src="/src/img/blog/friends@1x.png" alt="" />
+                  </picture>
                 </div>
                 <div
                   class="news-article-row__category-and-date category-and-date"
                 >
-                  <span class="category">Category</span
+                  <a class="category" href="#"
+                    ><span class="category">Category</span></a
                   ><span class="data">November 22, 2021</span>
                 </div>
                 <div class="news-article-row__text">
-                  Beta prototype sales iPad gen-z marketing network effects
-                  value proposition
+                  <p>
+                    Beta prototype sales iPad gen-z marketing network effects
+                    value proposition
+                  </p>
                 </div>
                 <div class="news-article-row__autor">
                   <div class="news-article-row__autor-image">
-                    <img src="/src/img/blog/autor_3.png" alt="" />
+                    <a href="#" class="autor__name">
+                      <picture>
+                        <source
+                          srcset="
+                            /src/img/blog/autor_3@1x.png 1x,
+                            /src/img/blog/autor_3@2x.png 2x
+                          "
+                        />
+                        <img
+                          src="/src/img/blog/autor_3@1x.png"
+                          alt=""
+                        /> </picture
+                    ></a>
                   </div>
                   <div class="news-article-row__autor-name autor-name">
-                    Monica Geller
+                    <a href="#" class="autor__name">Monica Geller</a>
                   </div>
                 </div>
               </div>
@@ -235,7 +380,7 @@
             <img src="src/img/blog/image.png" alt="" />
           </div>
           <div class="template-container-title">
-            An enterprise template to ramp up your company website
+            <h2>An enterprise template to ramp up your company website</h2>
           </div>
           <div class="template-container-form">
             <form class="form" action="#" method="get">
@@ -258,30 +403,27 @@
             <div class="footer-container-info">
               <div class="footer-container-info__logo">
                 <div class="footer-container-info__logo-image">
-                  <img
-                    class="image-top"
-                    src="./img/blog/Rectangle1266.png"
-                    alt=""
-                  />
-                  <img
-                    class="image-bottom"
-                    src="./img/blog/Rectangle1265.png"
-                    alt=""
-                  />
+                  <svg class="black-logotype">
+                    <use xlink:href="#black-logotype"></use>
+                  </svg>
                 </div>
                 <div class="footer-container-info__logo-text">Boldo</div>
               </div>
               <div class="footer-container-info__social">
-                Social media validation business model canvas graphical user
-                interface launch party creative facebook iPad twitter.
+                <p>
+                  Social media validation business model canvas graphical user
+                  interface launch party creative facebook iPad twitter.
+                </p>
               </div>
               <div class="footer-container-info__rights">
-                All rights reserved.
+                <p>All rights reserved.</p>
               </div>
             </div>
             <div class="footer-container-nav">
               <div class="footer-container-nav__item">
-                <div class="footer-container-nav__item-title">Landings</div>
+                <div class="footer-container-nav__item-title">
+                  <h4>Landings</h4>
+                </div>
                 <div class="footer-container-nav__item-nav">
                   <nav>
                     <ul>
@@ -293,7 +435,9 @@
                 </div>
               </div>
               <div class="footer-container-nav__item">
-                <div class="footer-container-nav__item-title">Company</div>
+                <div class="footer-container-nav__item-title">
+                  <h4>Company</h4>
+                </div>
                 <div class="footer-container-nav__item-nav">
                   <nav>
                     <ul>
@@ -309,7 +453,9 @@
                 </div>
               </div>
               <div class="footer-container-nav__item">
-                <div class="footer-container-nav__item-title">Resources</div>
+                <div class="footer-container-nav__item-title">
+                  <h4>Resources</h4>
+                </div>
                 <div class="footer-container-nav__item-nav">
                   <nav>
                     <ul>
@@ -325,5 +471,23 @@
         </div>
       </section>
     </footer>
+    <svg display="none">
+      <symbol
+        id="black-logotype"
+        width="25"
+        height="33"
+        viewBox="0 0 25 33"
+        fill="none"
+      >
+        <path
+          d="M0 15.5H16.2851C21.0522 15.5 24.9167 19.3645 24.9167 24.1316V24.1316C24.9167 28.8987 21.0522 32.7632 16.2851 32.7632H0V15.5Z"
+          fill="#0A2640"
+        />
+        <path
+          d="M0 0.394531H10.8597C14.435 0.394531 17.3333 3.2929 17.3333 6.86822V6.86822C17.3333 10.4435 14.435 13.3419 10.8597 13.3419H0V0.394531Z"
+          fill="#0A2640"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>

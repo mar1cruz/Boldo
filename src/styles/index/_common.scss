@@ -219,15 +219,20 @@
 .footer-container-info__logo {
     padding-bottom: 40px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
 }
 .footer-container-info__logo-text {
     @include font-secondary;
 
-    padding-left: 36px;
+    padding-left: 11px;
     font-weight: 700;
     font-size: 43.25px;
     line-height: 34px;
     color: #0a2640;
+}
+.footer-container-info__logo-image {
+    max-height: 34px;
 }
 .footer-container-info__social,
 .footer-container-info__rights {
