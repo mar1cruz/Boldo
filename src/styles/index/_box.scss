@@ -19,32 +19,25 @@
     position: relative;
     z-index: 3;
     height: 42px;
-    padding-top: 56px;
-    padding-bottom: 64px;
+    margin-top: 56px;
+    margin-bottom: 64px;
 }
 .header-row {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-
-.header-logo,
+.header-logo {
+    height: 42px;
+}
 .log-in {
     display: flex;
     align-items: center;
 }
 
-.header-logo__text {
-    @include font-secondary;
-
-    align-items: center;
-    padding-left: 12px;
-    font-weight: 700;
-    font-size: 43.25px;
-    line-height: 34px;
-    color: #ffffff;
-}
 .header-navigation {
     ul {
+        height: 100%;
         display: flex;
         align-items: center;
 
@@ -80,7 +73,7 @@
 
 .log-in {
     width: 128px;
-    height: 40px;
+    height: 42px;
     background: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 24px;
@@ -107,6 +100,7 @@
 .boldo-row-building__title {
     h1 {
         @include font-secondary;
+        font-weight: 400;
         color: #ffffff;
         font-size: 48px;
         line-height: 72px;
@@ -280,7 +274,7 @@
     .boldo-row-building__button-explore {
         margin-left: 0px;
     }
-    .box-container .header-row .header-logo__text {
+    .box-container .header-row {
         font-size: 30px;
     }
     .box-container .header-row .header-navigation ul a {

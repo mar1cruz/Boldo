@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 .section-inner {
   padding-left: 20px;
   padding-right: 20px;
@@ -248,22 +252,6 @@ html {
 
 .footer-container-info__logo {
   padding-bottom: 40px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-}
-
-.footer-container-info__logo-text {
-  font-family: "Manrope", "Helvetica Neue", sans-serif;
-  padding-left: 11px;
-  font-weight: 700;
-  font-size: 43.25px;
-  line-height: 34px;
-  color: #0a2640;
-}
-
-.footer-container-info__logo-image {
-  max-height: 34px;
 }
 
 .footer-container-info__social,
@@ -350,9 +338,6 @@ html {
   .footer-container-info {
     width: 80%;
   }
-  .footer-container-info .footer-container-info__logo {
-    margin: 0 auto;
-  }
   .footer-container-info .footer-container-info__social {
     padding-bottom: 30px;
     max-width: 100%;
@@ -371,15 +356,6 @@ html {
   .footer-container-info {
     width: 80%;
     align-items: center;
-  }
-  .footer-container-info__logo {
-    height: 33px;
-    display: flex;
-    align-items: flex-end;
-  }
-  .footer-container-info__logo-text {
-    font-size: 30px;
-    line-height: 25px;
   }
   .footer-container-nav {
     max-width: 100%;
@@ -414,14 +390,13 @@ html {
     border-top: 2px solid grey;
   }
 }
-.black-logotype {
-  width: 25px;
-  height: 33px;
+.footer-container-info__logo-image {
+  height: 40px;
 }
 
-.logotypes {
-  width: 26px;
-  height: 33px;
+.black-logotype {
+  width: 156px;
+  height: 40px;
 }
 
 .blog {
@@ -542,16 +517,7 @@ html {
   align-items: center;
 }
 .section-header__logo {
-  display: flex;
-  align-items: center;
-}
-.section-header__logo-text p {
-  font-family: "Manrope", "Helvetica Neue", sans-serif;
-  padding-left: 12px;
-  color: #0a2640;
-  font-weight: 400;
-  font-size: 43.25px;
-  line-height: 34px;
+  height: 40px;
 }
 .section-header__nav .header-links {
   display: block;
@@ -584,8 +550,10 @@ html {
   transition: 0.3s ease;
 }
 .section-header__nav ul li:last-child {
+  cursor: pointer;
+  box-sizing: border-box;
   border: 2px solid #0a2640;
-  padding: 0;
+  padding: 6px 0;
   text-align: center;
   border-radius: 24px;
   width: 128px;
@@ -597,10 +565,10 @@ html {
 .section-header__nav ul li:last-child:hover {
   transition: 0.3s ease;
   background-color: rgb(123, 196, 49);
-  border-color: black;
+  border-color: #0a2640;
 }
 .section-header__nav ul li:last-child:hover a {
-  color: black;
+  color: #0a2640;
 }
 .section-header__nav ul li:last-child:active {
   transform: translateY(3px);
@@ -626,10 +594,6 @@ html {
   }
 }
 @media (max-width: 500px) {
-  .section-header .section-header__logo-text {
-    font-size: 40px;
-    line-height: 60px;
-  }
   .section-header .section-header__nav li:last-child {
     width: 90px;
   }
