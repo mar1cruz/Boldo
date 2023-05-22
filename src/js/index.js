@@ -11,11 +11,10 @@ if (iconMenu) {
     headerNavigation.classList.toggle("_active");
   });
 }
-
 if (headerLink) {
   burgerClose.addEventListener("click", function (e) {
-    document.body.classList.toggle("_lock");
-    iconMenu.classList.toggle("_active");
-    headerNavigation.classList.toggle("_active");
+    document.body.classList.remove("_lock");
+    iconMenu.classList.remove("_active");
+    headerNavigation.classList.remove("_active");
   });
 }
