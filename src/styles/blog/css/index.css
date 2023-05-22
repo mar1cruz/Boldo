@@ -15,6 +15,14 @@ div {
   box-sizing: border-box;
 }
 
+picture {
+  display: block;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
 .section-inner {
   padding-left: 20px;
   padding-right: 20px;
@@ -363,9 +371,6 @@ div {
   }
 }
 @media (max-width: 550px) {
-  .footer-container-info {
-    text-align: center;
-  }
   .footer-container-info__logo {
     justify-content: center;
   }
@@ -373,8 +378,9 @@ div {
     padding-bottom: 30px;
   }
   .footer-container-nav {
+    max-width: 80%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .footer-container-nav .footer-container-nav__item .footer-container-nav__item-title {
     font-size: 30px;

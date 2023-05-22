@@ -87,9 +87,10 @@
 }
 .boldo-row {
     position: relative;
-    z-index: 4;
+    z-index: 0;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 56px;
 }
 .boldo-row-building {
     display: flex;
@@ -172,36 +173,31 @@
         color: #ffffff;
     }
 }
-.boldo__first-grafic {
-    width: 100%;
-    margin-bottom: 26px;
-}
 .grafics-row {
     display: flex;
     justify-content: space-between;
+    margin-top: 26px;
+}
+.boldo__first-grafic {
+    width: 494px;
+    height: 232px;
 }
 .boldo__second-grafic {
-    img {
-        width: 100%;
-    }
-    max-width: 38%;
+    width: 192px;
+    height: 165px;
 }
 .boldo__third-grafic {
-    img {
-        width: 100%;
-    }
-    max-width: 52%;
-    margin-left: 40px;
+    width: 262px;
+    height: 165px;
 }
-.boldo-image {
-    max-width: 1173px;
-    margin: 0 auto;
+.logo-inline {
+    width: 1173px;
+    height: 93px;
     padding-bottom: 64px;
-    img {
-        width: 100%;
-    }
 }
-
+.header-burger {
+    display: none;
+}
 @media (max-width: 1233px) {
     .boldo-row-building__title {
         h1 {
@@ -237,11 +233,6 @@
         margin: 0 auto;
         padding-bottom: 20px;
     }
-    .boldo__first-grafic {
-        img {
-            max-width: 100%;
-        }
-    }
     .boldo-image {
         img {
             max-width: 100%;
@@ -254,20 +245,75 @@
         width: 900px;
         height: 1000px;
     }
-    .box-container .header-row .header-navigation ul li + li {
-        padding: 0px;
+    .menu-icon {
+        display: block;
+        position: relative;
+        z-index: 45;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
     }
-    .boldo {
-        padding-top: 90px;
+    .menu-icon::before,
+    .menu-icon::after,
+    .menu-icon span {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease;
+        background-color: #ffffff;
     }
+    .menu-icon::before,
+    .menu-icon::after {
+        content: "";
+    }
+    .menu-icon::before {
+        top: 0;
+    }
+    .menu-icon::after {
+        bottom: 0;
+    }
+    .menu-icon span {
+        top: 50%;
+        transform: translate(0px, -50%) scale(1);
+    }
+
     .header-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $main-color;
+        transition: all 0.3s ease;
+        overflow: auto;
+        transform: translate(0, -100%);
         ul {
-            display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            a {
+                font-size: 30px;
+            }
             li + li {
-                margin-top: 10px;
+                padding: 0px;
+                margin-top: 50px;
             }
         }
+    }
+    .menu-icon._active span {
+        transform: scale(0);
+    }
+    .menu-icon._active::before {
+        top: 50%;
+        transform: translate(0, -50%) rotate(-45deg);
+    }
+    .menu-icon._active::after {
+        bottom: 50%;
+        transform: translate(0, 50%) rotate(45deg);
+    }
+    .header-navigation._active {
+        transform: translate(0, 0);
     }
 }
 @media (max-width: 500px) {
@@ -276,9 +322,6 @@
     }
     .box-container .header-row {
         font-size: 30px;
-    }
-    .box-container .header-row .header-navigation ul a {
-        font-size: 14px;
     }
     .boldo-row-building__title h1 {
         font-size: 30px;

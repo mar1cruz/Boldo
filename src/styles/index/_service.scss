@@ -33,6 +33,10 @@
     max-width: 300px;
 }
 .service-container-row__item-image {
+    picture {
+        width: 300px;
+        height: 354px;
+    }
     margin-bottom: 24px;
     cursor: pointer;
 }

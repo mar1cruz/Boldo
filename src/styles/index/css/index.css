@@ -15,6 +15,14 @@ div {
   box-sizing: border-box;
 }
 
+picture {
+  display: block;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
 .section-inner {
   padding-left: 20px;
   padding-right: 20px;
@@ -363,9 +371,6 @@ div {
   }
 }
 @media (max-width: 550px) {
-  .footer-container-info {
-    text-align: center;
-  }
   .footer-container-info__logo {
     justify-content: center;
   }
@@ -373,8 +378,9 @@ div {
     padding-bottom: 30px;
   }
   .footer-container-nav {
+    max-width: 80%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .footer-container-nav .footer-container-nav__item .footer-container-nav__item-title {
     font-size: 30px;
@@ -487,9 +493,10 @@ div {
 
 .boldo-row {
   position: relative;
-  z-index: 4;
+  z-index: 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 56px;
 }
 
 .boldo-row-building {
@@ -578,38 +585,35 @@ div {
   color: #ffffff;
 }
 
-.boldo__first-grafic {
-  width: 100%;
-  margin-bottom: 26px;
-}
-
 .grafics-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 26px;
+}
+
+.boldo__first-grafic {
+  width: 494px;
+  height: 232px;
 }
 
 .boldo__second-grafic {
-  max-width: 38%;
-}
-.boldo__second-grafic img {
-  width: 100%;
+  width: 192px;
+  height: 165px;
 }
 
 .boldo__third-grafic {
-  max-width: 52%;
-  margin-left: 40px;
-}
-.boldo__third-grafic img {
-  width: 100%;
+  width: 262px;
+  height: 165px;
 }
 
-.boldo-image {
-  max-width: 1173px;
-  margin: 0 auto;
+.logo-inline {
+  width: 1173px;
+  height: 93px;
   padding-bottom: 64px;
 }
-.boldo-image img {
-  width: 100%;
+
+.header-burger {
+  display: none;
 }
 
 @media (max-width: 1233px) {
@@ -644,9 +648,6 @@ div {
     margin: 0 auto;
     padding-bottom: 20px;
   }
-  .boldo__first-grafic img {
-    max-width: 100%;
-  }
   .boldo-image img {
     max-width: 100%;
   }
@@ -656,18 +657,74 @@ div {
     width: 900px;
     height: 1000px;
   }
-  .box-container .header-row .header-navigation ul li + li {
-    padding: 0px;
+  .menu-icon {
+    display: block;
+    position: relative;
+    z-index: 45;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
   }
-  .boldo {
-    padding-top: 90px;
+  .menu-icon::before,
+  .menu-icon::after,
+  .menu-icon span {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+  }
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+  }
+  .menu-icon::before {
+    top: 0;
+  }
+  .menu-icon::after {
+    bottom: 0;
+  }
+  .menu-icon span {
+    top: 50%;
+    transform: translate(0px, -50%) scale(1);
+  }
+  .header-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a2640;
+    transition: all 0.3s ease;
+    overflow: auto;
+    transform: translate(0, -100%);
   }
   .header-navigation ul {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-navigation ul a {
+    font-size: 30px;
   }
   .header-navigation ul li + li {
-    margin-top: 10px;
+    padding: 0px;
+    margin-top: 50px;
+  }
+  .menu-icon._active span {
+    transform: scale(0);
+  }
+  .menu-icon._active::before {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
+  }
+  .menu-icon._active::after {
+    bottom: 50%;
+    transform: translate(0, 50%) rotate(45deg);
+  }
+  .header-navigation._active {
+    transform: translate(0, 0);
   }
 }
 @media (max-width: 500px) {
@@ -676,9 +733,6 @@ div {
   }
   .box-container .header-row {
     font-size: 30px;
-  }
-  .box-container .header-row .header-navigation ul a {
-    font-size: 14px;
   }
   .boldo-row-building__title h1 {
     font-size: 30px;
@@ -725,17 +779,17 @@ div {
 .connect-container-row-images {
   position: relative;
   margin: 0 auto;
-  max-width: 494px;
 }
-
-.connect-second-image {
+.connect-container-row-images .image-man {
+  width: 494px;
+  height: 506px;
+}
+.connect-container-row-images .image-man-grafic {
+  width: 251px;
+  height: 388px;
   position: absolute;
-  right: 25px;
+  right: 87px;
   top: 190px;
-}
-.connect-second-image img {
-  max-width: 251px;
-  display: block;
 }
 
 .connect-container-row-element {
@@ -1421,6 +1475,10 @@ div {
 .service-container-row__item-image {
   margin-bottom: 24px;
   cursor: pointer;
+}
+.service-container-row__item-image picture {
+  width: 300px;
+  height: 354px;
 }
 
 .service-container-row__item-title {

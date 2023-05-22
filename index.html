@@ -18,6 +18,7 @@
         <div class="box-circle"></div>
         <div class="header">
           <div class="header-row">
+            
                 <div class="header-logo">
                     <a href="#">
                         <svg  width="162" height="42" class="logotype"> 
@@ -26,7 +27,7 @@
                     </a>
                 </div>
                 <nav class="header-navigation">
-                    <ul>
+                    <ul class="burger-close">
                         <li><a href="#product" class="nav__links">Product</a></li>
                         <li><a href="#service" class="nav__links">Services</a></li>
                         <li><a href="#about" class="nav__links">About</a></li>
@@ -38,6 +39,9 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="menu-icon">
+                    <span></span>
+                </div>
           </div>
         </div>
         <div class="boldo">
@@ -66,9 +70,9 @@
               </div>
             </div>
             <div class="boldo-row-grafics">
-                <picture>
-                    <source type="image/png" srcset="/src/img/index/first-grafic@1x.png 1x, /src/img/index/first-grafic@2x.png 2x">
-                    <img class="boldo__first-grafic" src="src/img/index/first-grafic@1x.png" alt="">
+                <picture class="boldo__first-grafic">
+                    <source srcset="/src/img/index/first-grafic@1x.png 1x, /src/img/index/first-grafic@2x.png 2x">
+                    <img  src="src/img/index/first-grafic@1x.png" alt="">
                 </picture>
 
               <div class="grafics-row">
@@ -84,7 +88,7 @@
             </div>
           </div>
           <div class="boldo-image">
-            <picture>
+            <picture class="logo-inline">
                 <source srcset="/src/img/index/LogoWall@1x.png 1x, /src/img/index/LogoWall@2x.png 2x,/src/img/index/LogoWall@3x.png 3x">
                 <img src="/src/img/index/LogoWall@1x.png" alt="">
             </picture>
@@ -143,11 +147,11 @@
                     <div class="connect-conteiner container">
                         <div class="connect-container-row">
                             <div class="connect-container-row-images">
-                                <picture>
+                                <picture class="image-man">
                                     <source srcset="/src/img/index/man@1x.png 1x, /src/img/index/man@2x.png 2x">
                                     <img class="connect-first__image" src="/src/img/index/man@1x.png" alt="">
                                 </picture>
-                                <picture>
+                                <picture class="image-man-grafic">
                                     <source srcset="/src/img/index/man-grafic@1x.png 1x, /src/img/index/man-grafic@2x.png 2x">
                                     <img class="connect-second-image" src="/src/img/index/man-grafic@1x.png" alt="">
                                 </picture>
@@ -505,5 +509,6 @@
                     <path d="M36 26.5L46.5 37L36 47.5" stroke="#0A2640" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </symbol>
             </svg>
+            <script src="/src/js/index.js"></script>
   </body>
 </html>

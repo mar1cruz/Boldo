@@ -9,15 +9,17 @@
 .connect-container-row-images {
     position: relative;
     margin: 0 auto;
-    max-width: 494px;
-}
-.connect-second-image {
-    position: absolute;
-    right: 25px;
-    top: 190px;
-    img {
-        max-width: 251px;
-        display: block;
+
+    .image-man {
+        width: 494px;
+        height: 506px;
+    }
+    .image-man-grafic {
+        width: 251px;
+        height: 388px;
+        position: absolute;
+        right: 87px;
+        top: 190px;
     }
 }
 .connect-container-row-element {
